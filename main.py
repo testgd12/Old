@@ -30,7 +30,7 @@ bot = Client("bot",
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.\nPress /covid")
+            "Hello Bruh **I am Text Downloader Bot**.\n\nI can download videos from **text** file one by one.")
 
 
 @bot.on_message(filters.command("stop"))
@@ -40,7 +40,7 @@ async def restart_handler(_, m):
 
 
 
-@bot.on_message(filters.command(["covid"]))
+@bot.on_message(filters.command(["txt"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text('Send TXT file for download')
     input: Message = await bot.listen(editable.chat.id)
