@@ -29,7 +29,8 @@ bot = Client("bot",
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\nPress /covid")
+    editable = await m.reply_text(f"
+            "Hello Bruh **I am Text Downloader Bot**. I can download videos from **text** file one by one.\nPress /covid")
 
 
 @bot.on_message(filters.command("stop"))
